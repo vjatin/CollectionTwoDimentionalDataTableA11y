@@ -32,7 +32,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let cell: ColVwCell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! ColVwCell
         cell.lblcell.text = tableData[indexPath.row]
         
-        //set the data table's column header, row header & data cell's association with headers
+        //set the data table's column header, row header & data cell's association with headers 
         if indexPath.row == 0 || indexPath.row == 1 || indexPath.row == 2
         {
             cell.lblcell.accessibilityLabel = tableData[indexPath.row] + "Column "
